@@ -1,5 +1,8 @@
 import streamlit as st
 import os
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 import shutil
 from crawler.spider import run_spider
 from analyzer.content_analyzer import analyze_pages
